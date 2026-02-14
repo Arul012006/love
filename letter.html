@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f8b500, #fce38a, #f38181);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: Georgia, serif;
+            padding: 20px;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .letter-container {
+            background: #fffef0;
+            max-width: 700px;
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+        h1 {
+            color: #c0392b;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            font-family: Brush Script MT, cursive;
+        }
+        .content { color: #2c3e50; font-size: 1.3em; line-height: 2; text-align: justify; }
+        .content p { margin-bottom: 25px; }
+        .signature {
+            text-align: right;
+            margin-top: 50px;
+            font-family: Brush Script MT, cursive;
+            font-size: 2em;
+            color: #c0392b;
+        }
+        .heart-seal {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 60px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .nav-links { text-align: center; margin-top: 40px; }
+        .nav-links a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(45deg, #c0392b, #e74c3c);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 0 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1em;
+        }
+        .nav-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(192, 57, 43, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container">
+        <div class="heart-seal">💖</div>
+        <h1>This For Youhh</h1>
+        <div class="content">
+            <p>My Dearest Love,</p>
+            <p>Happy Valentine’s Day to the love of my life! Every day with you feels magical, but today I want to celebrate you extra for making my world brighter, warmer, and more meaningful. You are my greatest adventure, my safest home, and the best decision I ever made. I love you more than words can say—Happy Valentine’s Day, my forever! .</p>
+            <p>To the person who completes me in every way: Thank you for filling my life with love, laughter, and endless joy. You make my ordinary days extraordinary, and I cannot imagine my life without you by my side. Happy Valentine’s Day, sweetheart!</p>
+            <p>My love, our journey together is my favorite story, and I am so grateful for every moment we share. Your love is my calm to the chaos, and I promise to love you deeper with every heartbeat and every tomorrow. Happy Valentine’s Day!</p>
+            <p>"Some say love is found, but with you, I know love is built—moment by moment, day by day. Thank you for being my partner in crime, my best friend, and my deepest love. I love you more with each passing day. Happy Valentine’s Day!</p>
+            <p>Forever yours,</p>
+        </div>
+        <div class="signature">Your Loving Heart</div>
+        <div class="nav-links">
+            <a href="welcome.html">Home</a>
+            <a href="song.html">Song</a>
+            <a href="pic.html">Picture</a>
+        </div>
+    </div>
+</body>
+</html>

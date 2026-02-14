@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Kutty Mahh</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff6b6b, #feca57, #ff9ff3);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: Georgia, serif;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        h1 { color: #e84393; font-size: 3em; margin-bottom: 20px; }
+        p { color: #636e72; font-size: 1.5em; margin-bottom: 30px; line-height: 1.8; }
+        .heart { font-size: 100px; animation: heartbeat 1.5s infinite; display: inline-block; }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #e84393, #fd79a8);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(232, 67, 147, 0.4);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(232, 67, 147, 0.6);
+        }
+        .nav-links { margin-top: 40px; }
+        .nav-links a {
+            color: #e84393;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #fd79a8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>Welcome Kutty Mahh!</h1>
+        <p>I'm so grateful to have you in my life.</p>
+        <p>You are my sunshine, my everything!</p>
+        <a href="letter.html" class="btn">Open Your Surprise</a>
+        <div class="nav-links">
+            <a href="letter.html">Letter</a> |
+            <a href="song.html">Song</a> |
+            <a href="pic.html">Picture</a>
+        </div>
+    </div>
+</body>
+</html>
